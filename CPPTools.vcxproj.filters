@@ -21,14 +21,23 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileLoading.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Algorithms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="myTextFile.txt">
+    <Text Include="myTextFile1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="myTextFile2.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

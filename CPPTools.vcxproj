@@ -200,14 +200,17 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithms.cpp" />
     <ClCompile Include="FileLoading.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithms.h" />
     <ClInclude Include="FileLoading.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="myTextFile.txt" />
+    <Text Include="myTextFile1.txt" />
+    <Text Include="myTextFile2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
