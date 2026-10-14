@@ -200,12 +200,12 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithms.cpp" />
+    <ClCompile Include="DiffEngine.cpp" />
     <ClCompile Include="FileLoading.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithms.h" />
+    <ClInclude Include="DiffEngine.h" />
     <ClInclude Include="FileLoading.h" />
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,8 @@
 #include <vector>
 #include "FileLoading.h"
 #include <optional>
-#include "Algorithms.h"
+#include <utility>
+#include "DiffEngine.h"
 
 int main()
 {
@@ -15,11 +16,6 @@ int main()
 		return 1;
 	}
 
-	std::cout << "Lines1: " << std::endl;
-	for (const std::string& line : *fileLines1)
-	{
-		std::cout << line << std::endl;
-	}
 
 	const std::string filePath2 = "myTextFile2.txt";
 	std::optional<std::vector<std::string>> fileLines2 = getLinesFromFile(filePath2);
@@ -30,14 +26,13 @@ int main()
 		return 1;
 	}
 
-	std::cout << "Lines2: " << std::endl;
-	for (const std::string& line : *fileLines2)
+	std::vector<std::string> diff = getDiff(*fileLines1, *fileLines2);
+	std::cout << "File (" << filePath1 << ") to File (" << filePath2 << ")" << ", Diff:" << std::endl;
+	for (const std::string& line : diff)
 	{
 		std::cout << line << std::endl;
 	}
 
-	int lengthOfLCS = longestCommonSubsequence(*fileLines1, *fileLines2);
-	std::cout << "Length of LCS: " << lengthOfLCS << std::endl;
 
 	return 0;
 }

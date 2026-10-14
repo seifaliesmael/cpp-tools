@@ -4,3 +4,5 @@ Different Line 3
 Same Line 4
 Same Line 5
 Different Line 6
+New Line 7
+New Line 8
