@@ -9,6 +9,9 @@
 ipch/
 *.aps
 *.ncb
+.slnx
+.vcxproj
+.vcxproj.filters
 
 # --- Build output (all platforms/configurations) ---
 [Dd]ebug/
