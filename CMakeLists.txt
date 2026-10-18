@@ -21,6 +21,7 @@ target_sources(CPPTools_Core
         FILES
           ./DiffEngine.h
           ./FileLoading.h
+          ./Types.h
 )
 
 add_executable(CPPTools)
@@ -30,7 +31,6 @@ target_link_libraries(CPPTools PRIVATE CPPTools_Core)
 target_sources(CPPTools
 	PRIVATE
 		Main.cpp
-
 )
 
 # Testing

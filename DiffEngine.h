@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
 #include <string>
+#include "Types.h"
 
-std::vector<std::string> getDiff(const std::vector<std::string>& lines1, const std::vector<std::string>& lines2);
+Lines getDiff(const Lines& lines1, const Lines& lines2);

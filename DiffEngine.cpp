@@ -4,12 +4,14 @@
 #include <algorithm>
 
 // Get diff from one file's lines to another
-std::vector<std::string> getDiff(const std::vector<std::string>& lines1, const std::vector<std::string>& lines2)
+Lines getDiff(const Lines& lines1, const Lines& lines2)
 {
 	// Initialise 2D DP Array
 	// Rows, Cols
 	// Each cell dp[i][j] is the length of the LCS between lines1[i:], lines2[j:]
 	std::vector<std::vector<int>> dp(lines1.size() + 1, std::vector<int> (lines2.size() + 1, 0));
+
+	// TODO: Optimise this vector by using one big vector instead of sub-vectors.
 
 	// Iterate backwards from the bottom right corner and calculate length of LCS at each step.
 	for (int i = lines1.size() - 1; i >= 0; i--)
@@ -35,7 +37,7 @@ std::vector<std::string> getDiff(const std::vector<std::string>& lines1, const s
 	// Build the diff itself
 	int i = 0;
 	int j = 0;
-	std::vector<std::string> diff;
+	Lines diff;
 
 	while (i < lines1.size() && j < lines2.size())
 	{

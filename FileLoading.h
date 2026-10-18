@@ -2,5 +2,6 @@
 #include <string>
 #include <vector>
 #include <optional>
+#include "Types.h"
 
-std::optional<std::vector<std::string>> getLinesFromFile(const std::string& filePath);
+std::optional<Lines> getLinesFromFile(const std::string& filePath);
