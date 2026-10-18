@@ -67,3 +67,6 @@ ctest --test-dir <build-directory>
 # Windows
 ./build/CPPTools.exe <filePath1> <filePath2>
 ```
+
+### License
+[MIT License](LICENSE)
