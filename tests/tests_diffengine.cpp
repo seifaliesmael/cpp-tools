@@ -11,7 +11,7 @@ TEST(DiffEngineTest, EmptyInputsGiveEmptyDiff) {
 	EXPECT_TRUE(getDiff({}, {}).empty());
 }
 
-TEST(DIffEngineTest, SameInputsShowNoChanges) {
+TEST(DiffEngineTest, SameInputsShowNoChanges) {
 	Lines input = { "a", "b", "c" };
 	Lines expected = { "  a", "  b", "  c" };
 	EXPECT_EQ(getDiff(input, input), expected);
