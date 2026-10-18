@@ -9,9 +9,10 @@
 ipch/
 *.aps
 *.ncb
-.slnx
-.vcxproj
-.vcxproj.filters
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+Testing/
 
 # --- Build output (all platforms/configurations) ---
 [Dd]ebug/
@@ -46,10 +47,11 @@ x86/
 *.log
 *.recipe
 
-# --- CMake (if ever used) ---
+# --- CMake ---
 CMakeCache.txt
 CMakeFiles/
 cmake-build-*/
+CMakeUserPresets.json
 
 # --- Editors / OS ---
 .vscode/
