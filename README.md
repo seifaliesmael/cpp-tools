@@ -2,7 +2,8 @@
 From-scratch implementations of common utility programs (for now, only diff) implemented by hand in C++.
 ## Technical Stack
 * Pure C++
-* Future: GTest (for unit tests)
+* CMake for build, dependencies, and running tests.
+* GoogleTest for unit testing - automatic verification that the code behaves as expected.
 ## Overview of Tools
 1. **Diff**  
 A tool that lets you compare two versions of a file and see what lines were removed or added, as a "line-by-line".  
